@@ -1,0 +1,54 @@
+
+body {
+  overflow: hidden;
+}
+
+html, body, #root, .App {
+  height: 100%;
+}
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+/*Used 20% so that the site is responsive on all devices. Overflow added for Responsive on Screen Shrink.*/
+.App .sideBar {
+  width: 20%;
+  background: #ceefe4;
+  overflow-y: scroll;
+}
+.App .sideBar #search {
+  width: 100%;
+  height: 2rem;
+  font-size: 1rem;
+  margin-top: 10%;
+}
+.App .sideBar .venueList {
+  padding: 1rem;
+}
+.App .sideBar .venueList .listView {
+  list-style: none;
+  display: flex;
+  object-fit: cover;
+  text-align: center;
+  font-size: 1rem;
+  padding: .5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  background:#ceefe4;
+  color:#524d5b;
+  font-weight:bold;
+  box-shadow: 2px 2px 2px 2px rgba(40, 40, 41, 0.25);
+};
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
