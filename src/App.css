@@ -20,6 +20,11 @@ html, body, #root, .App {
   background: #ceefe4;
   overflow-y: scroll;
 }
+@media only screen and (max-width: 600px) {
+ .App .sideBar{
+   width: 60%;
+ }
+} 
 .App .sideBar #search {
   width: 100%;
   height: 2rem;
