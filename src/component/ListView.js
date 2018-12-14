@@ -8,7 +8,7 @@ export default class ListView extends Component {
   };
   render() {
     return (
-      <li tabIndex={0} className="listView" onClick={this.onClickHandler}>{this.props.name}</li>
+      <li tabIndex={0} className="listView" role="listitem" onClick={this.onClickHandler}>{this.props.name}</li>
     )
   }
 }
