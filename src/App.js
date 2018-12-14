@@ -70,7 +70,10 @@ class App extends Component {
       });
       this.setState({ venues, center, markers });
     }).catch(err => {
-      new Error(console.log(err));
+      new Error(alert(
+        "An error occurred while trying to fetch data from Foursquare: " +
+          err)
+        );
         this.setState(prevState => ({
           errorDisplay: prevState.errorDisplay.length === 0 ? err.toString() : prevState.errorDisplay
         }));
